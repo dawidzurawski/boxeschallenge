@@ -6,7 +6,7 @@ export default function App(){
   
   const [squares, setSquares] = React.useState(boxes)
   
-  squareElements = squares.map(square => (
+  const squareElements = squares.map(square => (
     <Box key={square.id} on={square.on}/>
   ))
 
