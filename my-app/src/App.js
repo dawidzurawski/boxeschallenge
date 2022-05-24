@@ -4,10 +4,10 @@ import boxes from "./boxes"
 
 export default function App(){
   
-  const [squares, squareElements] = React.useState(boxes)
+  const [squares, setSquares] = React.useState(boxes)
   
   squareElements = squares.map(square => (
-    <Box key = {square.id}/>
+    <Box key={square.id} on={square.on}/>
   ))
 
   return(
